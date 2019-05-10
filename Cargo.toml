@@ -1,0 +1,8 @@
+[package]
+name = "blursed"
+version = "0.1.0"
+authors = ["Komi Amiko <komiamiko@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+discord = "0.8.0"
