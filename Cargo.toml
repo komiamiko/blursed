@@ -5,4 +5,10 @@ authors = ["Komi Amiko <komiamiko@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-discord = "0.8.0"
+dotenv = "^0.14"
+# @ linux users
+# some things you may need to do before serenity can work
+# install pkg-config
+# install openssl the development version
+# the actual terminal commands will vary depending on your environment. good luck!
+serenity = { git = "https://github.com/serenity-rs/serenity", tag = "v0.6.0-rc.0" }
