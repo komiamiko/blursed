@@ -5,6 +5,7 @@ authors = ["Komi Amiko <komiamiko@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+# .env file should go in the root directory for the project. the one that contains src and target and such
 dotenv = "^0.14"
 # @ linux users
 # some things you may need to do before serenity can work
