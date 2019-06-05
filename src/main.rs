@@ -1,9 +1,13 @@
+#![feature(macro_at_most_once_rep, macro_literal_matcher, uniform_paths)]
+
 use dotenv;
 
 use serenity::{
     model::{channel::Message, gateway::Ready},
     prelude::*,
 };
+
+mod utils;
 
 struct Handler;
 
