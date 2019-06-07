@@ -12,4 +12,5 @@ dotenv = "^0.14"
 # install pkg-config
 # install openssl the development version
 # the actual terminal commands will vary depending on your environment. good luck!
-serenity = { git = "https://github.com/serenity-rs/serenity", tag = "v0.6.0-rc.0" }
+serenity = { git = "https://github.com/serenity-rs/serenity.git", tag = "v0.6.0-rc.0" }
+nom = "4.2.3"

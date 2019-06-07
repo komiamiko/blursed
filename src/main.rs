@@ -5,6 +5,8 @@ use serenity::{
     prelude::*,
 };
 
+mod utils;
+
 struct Handler;
 
 impl EventHandler for Handler {
@@ -22,12 +24,10 @@ impl EventHandler for Handler {
                 // channel, so log to stdout when some error happens, with a
                 // description of it.
                 if let Err(why) = msg.channel_id.say(&ctx.http, "Pong!") {
-                    println!("Error sending message: {:?}",why);
+                    println!("Error sending message: {:?}", why);
                 }
             }
-            "b,activate" => {
-                
-            }
+            "b,activate" => {}
             _ => {}
         }
     }
@@ -45,8 +45,7 @@ impl EventHandler for Handler {
 
 fn main() {
     // Configure the client with your Discord bot token in the environment.
-    let token = String::from(dotenv::var("TOKEN_DISCORD")
-        .expect("Expected a token in the environment"));
+    let token = dotenv::var("TOKEN_DISCORD").expect("Expected a token in the environment");
 
     // Create a new instance of the Client, logging in as a bot. This will
     // automatically prepend your bot token with "Bot ", which is a requirement
